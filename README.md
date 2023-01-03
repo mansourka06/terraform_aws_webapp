@@ -12,7 +12,7 @@ This repository setup a deployment of a web application in AWS using Terraform
 Here is same instructions for how to set up the development environment and how to run your code.
 
   - Install and configure Terraform on your local machine.
-  - Create a Terraform configuration file that defines your AWS infrastructure. This file should specify the resources that you want to create, such as an EC2  -   -     - instance, a security group, and an IAM role.
+  - Create a Terraform configuration file that defines your AWS infrastructure. This file should specify the resources that you want to create, such as an EC2, instance, a security group, and an IAM role.
   - Run terraform init to initialize the Terraform configuration and download any required plugins.
   - Run terraform plan to generate an execution plan for your infrastructure. This will show you what Terraform will do when you apply the configuration.
   - If the plan looks correct, run terraform apply to create the resources in AWS.
@@ -25,11 +25,12 @@ This configuration will create an EC2 instance, a security group that allows inc
 
 
 # Author
-Mansour KA
+Mansour KA - [Email](kamansour06@gmail.com)
 
 # Conclusion
-I hope you enjoy taking this course as much as I did creating it. I'd love to hear feedback and suggestions for revisions. Find me on Twitter (@ned1313) or add an issue to this repository.
+I hope this is useful for you. 
+I'm open to hear feedbacks and suggestions for revisions.
 
 Thanks and happy automating!
 
-Mansour
+Mansour :)
