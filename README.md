@@ -20,6 +20,8 @@ Here is same instructions for how to set up the development environment and how 
   - Run terraform plan to generate an execution plan for your infrastructure. This will show you what Terraform will do when you apply the configuration.
   - If the plan looks correct, run terraform apply to create the resources in AWS.
 
+## OS supported
+- [x] RedHat 
 
 # Author
 Mansour KA - [Email](kamansour06@gmail.com)
