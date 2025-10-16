@@ -1,6 +1,6 @@
 # 🚀 Terraform AWS Deployment
 
-This project demonstrates how to **provision and deploy infrastructure on AWS using Terraform** and a **deployment script (`scripts/deploy-webapp.sh`)**.
+This project demonstrates how to **provision and deploy infrastructure on AWS using Terraform** and a **deployment [script ](`scripts/deploy-webapp.sh`)**.
 It’s a hands-on DevOps project showing Infrastructure as Code (IaC) and automation in AWS using Terraform
 
 ---
