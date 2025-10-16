@@ -1,32 +1,96 @@
-# terraform_aws_webapp
-This repository setup a deployment of a web application in AWS using Terraform
+# 🚀 Terraform AWS Deployment
 
+This project demonstrates how to **provision and deploy infrastructure on AWS using Terraform** and a **deployment script (`scripts/deploy-webapp.sh `)**.
+It’s a hands-on DevOps project showing Infrastructure as Code (IaC) and automation in AWS using Terraform
 
-In this project, i build a configuration that will create an EC2 instance, a security group that allows incoming traffic on port 80, and an IAM role that allows the EC2 instance to access AWS resources. The provisioner block will run the commands specified in the inline array to install and configure the Apache web server on the EC2 instance. When you run terraform apply, Terraform will create the resources in AWS and install the web application on the EC2 instance.
+---
 
+## 📜 Description
 
-## Prerequisites
-   * AWS account
-   * Terrform installed in your dev host
-   
-## Getting Started
+In this project, i build a configuration that will create an EC2 instance, a security group that allows incoming traffic on port 80, and an IAM role that allows the EC2 instance to access AWS resources. The provisioner block will run the commands specified in the inline array to install and configure an nginx web server on the EC2 instance. When you run terraform apply, Terraform will create the resources in AWS and install the web application on the EC2 instance.
+
+---
+
+## 📂 Project Structure
+
+```
+├── terraform/main.tf           # Terraform configuration for AWS resources  
+├── scripts/deploy-webapp.sh    # Deployment script to automate execution  
+```
+
+---
+
+## ⚡ Features
+
+* 🌍 Infrastructure provisioning with **Terraform**
+* ☁️ Automated deployment on **AWS**
+* 📜 Simple shell script that deploy the web application
+* 🛠️ Demonstrates Infrastructure as Code (IaC) best practices
+
+---
+
+## 🛠️ Prerequisites
+
+Make sure you have:
+* ✅ AWS account (access_key and secret_key)
+* ✅ [Terraform](https://developer.hashicorp.com/terraform/downloads) installed
+* ✅ AWS CLI configured (`aws configure`) with proper credentials
+* ✅ Bash shell (Linux/Mac/WSL)
+
+---
+
+## 🚀 How to Run
+
 :information_source: **Information** : 
 
-Here is same instructions for how to set up the development environment and how to run your code.
+1. **Clone this repository**
 
-  - Install and configure Terraform on your local machine.
-  - Create a Terraform configuration file that defines your AWS infrastructure. This file should specify the resources that you want to create, such as an EC2, instance, a security group, and an IAM role.
-  - Run terraform init to initialize the Terraform configuration and download any required plugins.
-  - Run terraform plan to generate an execution plan for your infrastructure. This will show you what Terraform will do when you apply the configuration.
-  - If the plan looks correct, run terraform apply to create the resources in AWS.
+   ```bash
+   git clone https://github.com/mansourka06/terraform_aws_webapp.git
+   cd terraform_aws_webapp
+   ```
 
-## OS supported
-- [x] RedHat 
+2. **Initialize Terraform**
+
+   ```bash
+   cd terraform
+   terraform init
+   ```
+
+3. **Validate & Plan**
+
+   ```bash
+   terraform validate
+   terraform plan
+   ```
+
+4. **Destroy Infrastructure (when done)**
+
+   ```bash
+   terraform destroy -auto-approve
+   ```
+
+---
+
+## 📌 Learning Outcomes
+
+* Understand **Terraform basics** (providers, resources, state management)
+* Automate deployments with **Shell scripting**
+* Hands-on AWS infrastructure provisioning
+
+---
+
+## 🔗 Resources
+
+* [Terraform AWS Provider Docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+* [Terraform CLI Docs](https://developer.hashicorp.com/terraform/cli)
+
+---
 
 # Author
 Mansour KA - [Email](kamansour06@gmail.com)
 
-# Conclusion
+
 I hope this is useful for you. 
 I'm open to hear feedbacks and suggestions for revisions.
 
